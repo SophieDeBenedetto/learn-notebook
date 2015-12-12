@@ -1,0 +1,10 @@
+<div class="container col-md-6 col-md-offset-3">
+  <ul class="list-group">
+    {{#each model as |readme|}}
+     <li class="list-group-item active">
+      {{#link-to 'readmes.readme' readme}}
+         <h5>{{readme.title}}</h5> 
+     {{/link-to}}</li>
+    {{/each}}
+  </ul>
+</div>

@@ -20,11 +20,15 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
-    // ENV.APP.LOG_RESOLVER = true;
-    // ENV.APP.LOG_ACTIVE_GENERATION = true;
-    // ENV.APP.LOG_TRANSITIONS = true;
-    // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
-    // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.contentSecurityPolicy = {
+      'default-src': "'none'",
+      'script-src': "'self' 'unsafe-inline' *",
+      'font-src': "'self'",
+      'connect-src': "'self' http://localhost:3000",
+      'img-src': "'self' *",
+      'style-src': "'self' 'unsafe-inline *",
+      'media-src': "'self'"
+    };
   }
 
   if (environment === 'test') {
