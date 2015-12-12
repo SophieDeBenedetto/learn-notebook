@@ -1,4 +1,4 @@
-<div class="well col-md-8 col-md-offset-2">
+<div class="well col-md-8 col-md-offset-2" id="readme">
 {{markdown-to-html markdown=model.content ghCodeBlocks=true}}
 
 {{!-- {{markdown-section content=model.content}} --}}
@@ -11,7 +11,7 @@
 </div>
 {{outlet}}
 
-{{annotate-it}}
+{{annotate-it id=model.id}}
 
 {{!-- <script src="https://genius.codes"></script> --}}
 
