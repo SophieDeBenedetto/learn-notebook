@@ -1,17 +1,9 @@
-<div class="well col-md-8 col-md-offset-2" id="readme">
-{{markdown-to-html markdown=model.content ghCodeBlocks=true}}
 
-{{!-- {{markdown-section content=model.content}} --}}
-{{!-- <h4>{{model.title}}</h4>  
-  <p>{{model.content}}</p>  --}}
-</div>
 
-<div id="test">
-  HI THERE
-</div>
+
 {{outlet}}
 
-{{annotate-it id=model.id}}
 
-{{!-- <script src="https://genius.codes"></script> --}}
+{{annotate-it id=model.id model=model}}
+
 

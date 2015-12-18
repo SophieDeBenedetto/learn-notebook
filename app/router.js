@@ -7,7 +7,7 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('readmes', function() {
-    this.route('readme', {path: '/:readme_id'})
+    this.route('readme', {path: '/:readme_id'});
   })
 });
 

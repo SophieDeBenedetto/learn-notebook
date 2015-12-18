@@ -18,7 +18,7 @@ export default Ember.Component.extend({
       },
 
       loadFromSearch: {
-        // 'limit': 20,
+          // 'limit': 20,
         // 'all_fields': 1,
         // 'readme_id': this.id
         'uri': 'http://localhost:4200/readmes/' + this.id
