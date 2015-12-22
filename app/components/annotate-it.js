@@ -5,7 +5,7 @@ export default Ember.Component.extend({
   didInsertElement: function() {
     let id = this.id;
     $('#readme').annotator().annotator('addPlugin', 'Store', {
-      prefix: 'http://localhost:3000/api/v1',
+      prefix: 'https://learn-notebook-api.herokuapp.com/api/v1',
       //Attach the uri of the current page to all annotations to allow search.
       annotationData: {
         // set uri here to scope annotation
